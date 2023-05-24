@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <header class="mx-auto my-10 text-center w-fit">
+        <h1
+          class="p-6 font-serif text-5xl font-bold text-white bg-black rounded-xl"
+        >
+          CALCULATOR
+          <span class="text-black bg-white pe-2 rounded-xl">.JPEG</span>
+        </h1>
+      </header>
+  
+      <section class="flex justify-center w-full">
+        <div
+          class="w-[25%] bg-black my-10 calculator p-6 flex items-end rounded-xl flex-col"
+        >
+          <div class="top-section w-full me-0 flex justify-end items-center">
+            <div class="solarPanel relative h-5/6 me-4 w-1/6 bg-green-950 rounded-lg">
+              <div class="w-full h-1/3 border-[2px] border-black"></div>
+              <div class="w-full h-1/3 border-[2px] border-black"></div>
+              <div class="w-full h-1/3 border-[2px] border-black"></div>
+              <div class="slider absolute top-0 left-0 h-full w-full bg-gray-900 rounded-lg flex items-center justify-end">
+                <div class="h-5/6 w-1/6 bg-slate-800 me-1 border-[2px] border-black rounded-2xl"></div>
+              </div>
+            </div>
+            <div
+              class="screen bg-gray-500 w-5/6 h-[80px] me-0 rounded-xl flex flex-col text-end"
+            >
+              <div class="screenIn text-lg pe-4 w-full h-[25%]"></div>
+              <div class="screenOut text-5xl text-amber-100 pe-4 me-2 w-full h-[70%]" id="outputScreen">
+                0
+              </div>
+            </div>
+          </div>
+          <div class="buttons w-full my-5 text-2xl">
+            <div
+              class="btn-section flex flex-col items-center text-black text-center justify-evenly gap-5 font-bold mt-6"
+            >
+              <div class="btn-row flex justify-between w-full">
+                <button data-btn="clear" class="btn buttonAlt">CE</button>
+                <button data-btn="%" class="btn">%</button>
+                <button data-btn="parenthesis" class="btn">()</button>
+                <button data-btn="/" class="btn">&div;</button>
+              </div>
+              <div class="btn-row flex justify-between w-full">
+                <button data-btn="7" class="btn">7</button>
+                <button data-btn="8" class="btn">8</button>
+                <button data-btn="9" class="btn">9</button>
+                <button data-btn="*" class="btn">&times;</button>
+              </div>
+              <div class="btn-row flex justify-between w-full">
+                <button data-btn="4" class="btn">4</button>
+                <button data-btn="5" class="btn">5</button>
+                <button data-btn="6" class="btn">6</button>
+                <button data-btn="-" class="btn">&minus;</button>
+              </div>
+              <div class="btn-row flex justify-between w-full">
+                <button data-btn="1" class="btn">1</button>
+                <button data-btn="2" class="btn">2</button>
+                <button data-btn="3" class="btn">3</button>
+                <button data-btn="+" class="btn">&plus;</button>
+              </div>
+              <div class="btn-row flex justify-between w-full">
+                <button data-btn="backspace" class="btn">del</button>
+                <button data-btn="0" class="btn">0</button>
+                <button data-btn="." class="btn">.</button>
+                <button data-btn="=" class="btn buttonAlt">&equals;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <script src="src/app.js"></script>
+</body>
+</html>
